@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+    s3UploadContainer:
+        image: s3-update-image
+        restart: always
+        ports:
+            - 3000:3000
+        container_name: s3UploadContainer
